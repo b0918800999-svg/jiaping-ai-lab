@@ -11,17 +11,25 @@ export default function Home() {
         </p>
 
         <div className="mt-10 flex gap-4">
-         <a
-  href="/notes"
-  className="rounded-full bg-zinc-900 px-6 py-3 text-white"
->
-  創作筆記
-</a>
+         
          <a
   href="/growth"
   className="rounded-full border border-zinc-300 px-6 py-3"
 >
   AI成長日記
+</a>
+<a
+href="#"
+className="rounded-full border border-zinc-300 px-6 py-3"
+>
+作品集
+</a>
+
+<a
+href="#"
+className="rounded-full border border-zinc-300 px-6 py-3"
+>
+音樂專區
 </a>
         </div>
       </main>
