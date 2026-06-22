@@ -4,10 +4,12 @@ export default function NotesPage() {
 
       <h1 className="text-4xl font-bold">佳萍的創作筆記</h1>
 
-      <p className="mt-6 max-w-2xl text-center text-gray-600">
-        這裡記錄每一次學習、每一次突破，未來回頭看，都會感謝今天努力的自己。
-      </p>
-
+     <p className="mt-3 text-gray-600">
+  學會建立作品卡片，讓網站不只是練習，
+  而是真正記錄自己的 AI 成長歷程。
+  從標題、文字、間距到卡片版面，
+  開始理解作品集要怎麼被整理、被看見。
+</p>
       {/* Day1 */}
       <div className="mt-10 max-w-2xl rounded-2xl border border-zinc-200 p-8 shadow-sm">
         <h2 className="text-2xl font-bold">

@@ -1,53 +1,96 @@
 export default function GrowthPage() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center">
-      <h1 className="text-4xl font-bold">
-        佳萍的 AI 成長日記
-      </h1>
+    <main className="min-h-screen bg-gradient-to-b from-amber-50 via-white to-zinc-100 px-6 py-12 text-zinc-900">
+      <section className="mx-auto max-w-3xl">
+        <p className="text-sm font-semibold tracking-[0.3em] text-amber-600">
+          JIAPING AI LAB
+        </p>
 
-      <p className="mt-6 text-lg text-gray-600">
-        記錄每一次學習、每一次挑戰，
-        回頭看時，會發現自己比昨天更勇敢。
-      </p>
-<div className="mt-10 max-w-2xl rounded-2xl border border-zinc-200 p-6">
-  <h2 className="text-2xl font-bold">
-    Day 4｜百鬼地鼠祭開發筆記
-  </h2>
+        <h1 className="mt-4 text-5xl font-black leading-tight">
+          佳萍的 AI 成長日記
+        </h1>
 
-  <p className="mt-4 text-gray-600 leading-8">
-    從零開始發想《百鬼地鼠祭》，結合地鼠玩法、排行榜挑戰與多種模式設計，
-    一步一步將腦中的創意化為真實作品。
+        <p className="mt-6 text-xl leading-loose text-zinc-600">
+          從不會寫程式開始，一步一步學會使用 AI、網站、遊戲、音樂與部署工具。
+          這裡記錄的不是完美，而是每一次跌倒後，還願意繼續往前走的自己。
+        </p>
 
-    在開發過程中，我學會使用 Next.js 建立網站架構、
-    整合圖片素材、調整版面設計、修正錯誤訊息，
-    並透過 Vercel 完成專案部署。
+        <div className="mt-10 space-y-6">
+          <div className="rounded-3xl border border-zinc-200 bg-white p-8 shadow-sm">
+            <h2 className="text-2xl font-bold">Day 1｜我的第一個網站</h2>
+            <p className="mt-4 leading-loose text-zinc-600">
+              第一次建立 Next.js 專案，完成首頁、創作筆記與 AI 成長日記。
+              從看不懂程式碼，到學會自己修改錯誤，這是我真正開始的第一步。
+            </p>
+          </div>
 
-    原本以為寫程式離自己很遙遠，
-    但透過 AI 協助，我發現只要願意嘗試，
-    每個人都能把想像變成真正可以被看見、被體驗的作品。
-  </p>
+          <div className="rounded-3xl border border-zinc-200 bg-white p-8 shadow-sm">
+            <h2 className="text-2xl font-bold">Day 2｜我的第一個作品集</h2>
+            <p className="mt-4 leading-loose text-zinc-600">
+              學會建立作品卡片，讓網站不只是練習，而是真正記錄自己的 AI 成長歷程。
+              從標題、文字、間距到卡片版面，開始理解作品集要怎麼被整理、被看見。
+            </p>
+          </div>
 
-  <div className="mt-6 rounded-2xl border border-zinc-200 p-6">
-    <h3 className="text-lg font-bold">
-      🎯 本次學習收穫
-    </h3>
+          <div className="rounded-3xl border border-zinc-200 bg-white p-8 shadow-sm">
+            <p className="text-sm font-semibold text-zinc-500">🎮 遊戲作品</p>
+            <h2 className="mt-3 text-2xl font-bold">Day 3｜百鬼地鼠祭</h2>
+            <p className="mt-4 leading-loose text-zinc-600">
+              打造原創手機遊戲《百鬼地鼠祭》，結合地鼠玩法、音效設計、排行榜與挑戰模式，
+              從遊戲企劃、介面設計到網站部署，全程獨立完成。
+            </p>
+            <a
+              href="https://hyakki-survival-game.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-6 inline-block rounded-full bg-zinc-900 px-6 py-3 text-white"
+            >
+              查看作品
+            </a>
+          </div>
 
-    <ul className="mt-4 space-y-2 text-gray-600">
-      <li>✅ 學會 Next.js 基本架構</li>
-      <li>✅ 完成原創遊戲企劃發想</li>
-      <li>✅ 整合圖片與版面設計</li>
-      <li>✅ 解決圖片路徑與錯誤問題</li>
-      <li>✅ 使用 Vercel 完成部署</li>
-      <li>✅ 建立自己的 AI 成長作品集</li>
-    </ul>
-  </div>
-</div>
-      <a
-        href="/"
-        className="mt-10 rounded-full bg-zinc-900 px-6 py-3 text-white"
-      >
-        回首頁
-      </a>
+          <div className="rounded-3xl border border-amber-200 bg-amber-50 p-8 shadow-sm">
+            <p className="text-sm font-semibold text-amber-700">🎵 音樂作品</p>
+            <h2 className="mt-3 text-2xl font-bold">Day 4｜55，不晚 黑膠專輯</h2>
+            <p className="mt-4 leading-loose text-zinc-700">
+              結合 AI 作曲、歌曲創作、黑膠唱片播放器與人生故事，
+              打造屬於自己的音樂專輯網站。55 歲不是結束，而是重新學著飛的開始。
+            </p>
+            <a
+              href="https://55-not-late.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-6 inline-block rounded-full bg-zinc-900 px-6 py-3 text-white"
+            >
+              查看作品
+            </a>
+          </div>
+
+          <div className="rounded-3xl border border-emerald-200 bg-emerald-50 p-8 shadow-sm">
+            <h2 className="text-2xl font-bold">Day 5｜作品集優化</h2>
+            <p className="mt-4 leading-loose text-zinc-700">
+              學習整理作品架構，將百鬼地鼠祭、55 不晚黑膠專輯與 AI 成長筆記，
+              整合成個人作品集，開始建立屬於自己的 AI 品牌與創作歷程。
+            </p>
+          </div>
+
+          <div className="rounded-3xl border border-sky-200 bg-sky-50 p-8 shadow-sm">
+            <h2 className="text-2xl font-bold">Day 6｜AI 創作實驗室正式完成</h2>
+            <p className="mt-4 leading-loose text-zinc-700">
+              從完全不懂程式與 AI 工具，到完成網站、遊戲、音樂專輯與作品集。
+              每一次卡關、每一次修改，都成為成長路上的養分。
+              佳萍 AI 創作實驗室，正式啟動。
+            </p>
+          </div>
+        </div>
+
+        <a
+          href="/"
+          className="mt-10 inline-block rounded-full bg-zinc-900 px-6 py-3 text-white"
+        >
+          回首頁
+        </a>
+      </section>
     </main>
   );
 }
