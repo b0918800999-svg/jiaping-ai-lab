@@ -31,7 +31,7 @@ const growthCards = [
   {
     icon: "🟥",
     title: "華爾街17號",
-    href: "/growth#wall-street-17",
+    href: "/wall-street-17",
     tone: "from-rose-50 to-red-100 ring-rose-200",
   },
   {

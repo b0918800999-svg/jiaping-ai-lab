@@ -53,8 +53,8 @@ const works = [
     description:
       "新的音樂故事作品，延伸佳萍的 AI 音樂宇宙，也讓作品牆更完整。",
     cover: "/wall-street-17.jpg",
-    href: "#wall-street-17",
-    action: "專輯整理中",
+    href: "/wall-street-17",
+    action: "查看專輯",
     tone: "from-rose-50 to-red-100 border-rose-200",
   },
   {
