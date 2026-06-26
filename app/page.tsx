@@ -5,7 +5,7 @@ const floatingWorks = [
   { name: "時光郵局", position: "right-0 top-[16%] rotate-[7deg]" },
   { name: "華爾街17號", position: "right-6 top-[44%] rotate-[-5deg]" },
   { name: "55 不晚", position: "left-0 top-[52%] rotate-[6deg]" },
-  { name: "打卡系統", position: "left-10 bottom-[10%] rotate-[-4deg]" },
+  { name: "彩虹拼圖", position: "left-10 bottom-[10%] rotate-[-4deg]" },
   { name: "楊家將物流", position: "right-3 bottom-[12%] rotate-[5deg]" },
 ];
 
@@ -39,10 +39,11 @@ const growthCards = [
     tone: "from-rose-50 to-red-100 ring-rose-200",
   },
   {
-    label: "整理中",
-    title: "AI 運送車",
-    href: "/ai-truck",
-    tone: "from-stone-50 to-zinc-200 ring-zinc-200",
+    label: "拼圖遊戲",
+    title: "彩虹拼圖",
+    href: "https://jessica-rainbow-puzzle.vercel.app/",
+    image: "/rainbow-puzzle-cover.png",
+    tone: "from-pink-50 via-yellow-50 to-sky-100 ring-pink-200",
   },
 ];
 

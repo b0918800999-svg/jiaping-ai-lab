@@ -58,15 +58,16 @@ const works = [
     tone: "from-rose-50 to-red-100 border-rose-200",
   },
   {
-    id: "ai-truck",
-    emoji: "⬛",
-    title: "AI 運送車",
-    category: "系統作品",
+    id: "rainbow-puzzle",
+    emoji: "🌈",
+    title: "彩虹拼圖",
+    category: "拼圖遊戲",
     description:
-      "把物流、打卡、管理與 AI 想像整理成可以繼續擴充的作品方向。",
-    href: "/ai-truck",
-    action: "整理中",
-    tone: "from-stone-50 to-zinc-200 border-zinc-200",
+      "可愛彩虹系拼圖作品，把遊戲感、色彩和療癒小挑戰放在一起。",
+    cover: "/rainbow-puzzle-cover.png",
+    href: "https://jessica-rainbow-puzzle.vercel.app/",
+    action: "查看作品",
+    tone: "from-pink-50 via-yellow-50 to-sky-100 border-pink-200",
   },
 ];
 
