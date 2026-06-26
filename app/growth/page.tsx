@@ -1,95 +1,131 @@
+const works = [
+  {
+    id: "first-site",
+    emoji: "🟨",
+    title: "第一個網站",
+    category: "網站作品",
+    description:
+      "從看不懂程式碼開始，第一次把自己的首頁、作品與故事放上網路。",
+    href: "/",
+    action: "回到首頁",
+    tone: "from-amber-50 to-yellow-100 border-amber-200",
+  },
+  {
+    id: "hyakki",
+    emoji: "🟦",
+    title: "百鬼地鼠祭",
+    category: "遊戲作品",
+    description:
+      "原創手機遊戲，結合地鼠玩法、挑戰模式與佳萍式的華麗祭典感。",
+    href: "https://hyakki-survival-game.vercel.app",
+    action: "查看作品",
+    tone: "from-sky-50 to-blue-100 border-sky-200",
+  },
+  {
+    id: "not-late",
+    emoji: "🟩",
+    title: "55 不晚",
+    category: "黑膠專輯",
+    description:
+      "用 AI 音樂、黑膠播放器與人生故事，記錄 55 歲重新開始的聲音。",
+    href: "https://55-not-late.vercel.app",
+    action: "查看專輯",
+    tone: "from-emerald-50 to-green-100 border-emerald-200",
+  },
+  {
+    id: "time-post",
+    emoji: "🟪",
+    title: "時光郵局",
+    category: "故事作品",
+    description:
+      "把回憶、祝福和想說的話寄給未來，像一間收藏人生片段的郵局。",
+    href: "#time-post",
+    action: "網址待補",
+    tone: "from-purple-50 to-violet-100 border-violet-200",
+  },
+  {
+    id: "wall-street-17",
+    emoji: "🟥",
+    title: "華爾街17",
+    category: "音樂專輯",
+    description:
+      "新的音樂故事作品，延伸佳萍的 AI 音樂宇宙，也讓作品牆更完整。",
+    href: "#wall-street-17",
+    action: "網址待補",
+    tone: "from-rose-50 to-red-100 border-rose-200",
+  },
+  {
+    id: "ai-truck",
+    emoji: "⬛",
+    title: "AI 運送車",
+    category: "系統作品",
+    description:
+      "把物流、打卡、管理與 AI 想像整理成可以繼續擴充的作品方向。",
+    href: "#ai-truck",
+    action: "整理中",
+    tone: "from-stone-50 to-zinc-200 border-zinc-200",
+  },
+];
+
 export default function GrowthPage() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-amber-50 via-white to-zinc-100 px-6 py-12 text-zinc-900">
-      <section className="mx-auto max-w-3xl">
-        <p className="text-sm font-semibold tracking-[0.3em] text-amber-600">
-          JIAPING AI LAB
-        </p>
+    <main className="min-h-screen bg-[linear-gradient(135deg,#fffaf0_0%,#f7e8d3_42%,#fffdf8_100%)] px-6 py-8 text-zinc-950 sm:px-10 sm:py-10">
+      <section className="mx-auto max-w-6xl">
+        <header className="flex items-center justify-between gap-4">
+          <p className="text-xs font-semibold tracking-[0.28em] text-zinc-700 sm:text-sm">
+            JIAPING AI LAB
+          </p>
+          <a
+            href="/"
+            className="rounded-full bg-white/70 px-4 py-2 text-sm font-semibold text-stone-700 shadow-sm ring-1 ring-amber-100 transition hover:-translate-y-0.5 hover:text-zinc-950"
+          >
+            回首頁
+          </a>
+        </header>
 
-        <h1 className="mt-4 text-5xl font-black leading-tight">
-          佳萍的 AI 成長日記
-        </h1>
-
-        <p className="mt-6 text-xl leading-loose text-zinc-600">
-          從不會寫程式開始，一步一步學會使用 AI、網站、遊戲、音樂與部署工具。
-          這裡記錄的不是完美，而是每一次跌倒後，還願意繼續往前走的自己。
-        </p>
-
-        <div className="mt-10 space-y-6">
-          <div className="rounded-3xl border border-zinc-200 bg-white p-8 shadow-sm">
-            <h2 className="text-2xl font-bold">Day 1｜我的第一個網站</h2>
-            <p className="mt-4 leading-loose text-zinc-600">
-              第一次建立 Next.js 專案，完成首頁、創作筆記與 AI 成長日記。
-              從看不懂程式碼，到學會自己修改錯誤，這是我真正開始的第一步。
-            </p>
-          </div>
-
-          <div className="rounded-3xl border border-zinc-200 bg-white p-8 shadow-sm">
-            <h2 className="text-2xl font-bold">Day 2｜我的第一個作品集</h2>
-            <p className="mt-4 leading-loose text-zinc-600">
-              學會建立作品卡片，讓網站不只是練習，而是真正記錄自己的 AI 成長歷程。
-              從標題、文字、間距到卡片版面，開始理解作品集要怎麼被整理、被看見。
-            </p>
-          </div>
-
-          <div className="rounded-3xl border border-zinc-200 bg-white p-8 shadow-sm">
-            <p className="text-sm font-semibold text-zinc-500">🎮 遊戲作品</p>
-            <h2 className="mt-3 text-2xl font-bold">Day 3｜百鬼地鼠祭</h2>
-            <p className="mt-4 leading-loose text-zinc-600">
-              打造原創手機遊戲《百鬼地鼠祭》，結合地鼠玩法、音效設計、排行榜與挑戰模式，
-              從遊戲企劃、介面設計到網站部署，全程獨立完成。
-            </p>
-            <a
-              href="https://hyakki-survival-game.vercel.app"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-6 inline-block rounded-full bg-zinc-900 px-6 py-3 text-white"
-            >
-              查看作品
-            </a>
-          </div>
-
-          <div className="rounded-3xl border border-amber-200 bg-amber-50 p-8 shadow-sm">
-            <p className="text-sm font-semibold text-amber-700">🎵 音樂作品</p>
-            <h2 className="mt-3 text-2xl font-bold">Day 4｜55，不晚 黑膠專輯</h2>
-            <p className="mt-4 leading-loose text-zinc-700">
-              結合 AI 作曲、歌曲創作、黑膠唱片播放器與人生故事，
-              打造屬於自己的音樂專輯網站。55 歲不是結束，而是重新學著飛的開始。
-            </p>
-            <a
-              href="https://55-not-late.vercel.app"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-6 inline-block rounded-full bg-zinc-900 px-6 py-3 text-white"
-            >
-              查看作品
-            </a>
-          </div>
-
-          <div className="rounded-3xl border border-emerald-200 bg-emerald-50 p-8 shadow-sm">
-            <h2 className="text-2xl font-bold">Day 5｜作品集優化</h2>
-            <p className="mt-4 leading-loose text-zinc-700">
-              學習整理作品架構，將百鬼地鼠祭、55 不晚黑膠專輯與 AI 成長筆記，
-              整合成個人作品集，開始建立屬於自己的 AI 品牌與創作歷程。
-            </p>
-          </div>
-
-          <div className="rounded-3xl border border-sky-200 bg-sky-50 p-8 shadow-sm">
-            <h2 className="text-2xl font-bold">Day 6｜AI 創作實驗室正式完成</h2>
-            <p className="mt-4 leading-loose text-zinc-700">
-              從完全不懂程式與 AI 工具，到完成網站、遊戲、音樂專輯與作品集。
-              每一次卡關、每一次修改，都成為成長路上的養分。
-              佳萍 AI 創作實驗室，正式啟動。
-            </p>
-          </div>
+        <div className="py-14 sm:py-18">
+          <p className="mb-5 w-fit rounded-full bg-white/70 px-4 py-2 text-sm font-medium text-amber-800 shadow-sm ring-1 ring-amber-100">
+            佳萍做出來的作品，都在這裡
+          </p>
+          <h1 className="max-w-4xl text-5xl font-black leading-[1.1] tracking-tight sm:text-6xl">
+            佳萍 AI 作品展示牆
+          </h1>
+          <p className="mt-6 max-w-3xl text-xl leading-10 text-stone-700">
+            這一頁不再只是日記，而是把已完成和正在整理的作品放在一起，
+            讓每一個作品都有自己的位置。
+          </p>
         </div>
 
-        <a
-          href="/"
-          className="mt-10 inline-block rounded-full bg-zinc-900 px-6 py-3 text-white"
-        >
-          回首頁
-        </a>
+        <div className="grid gap-5 pb-16 sm:grid-cols-2 lg:grid-cols-3">
+          {works.map((work) => (
+            <article
+              id={work.id}
+              key={work.id}
+              className={`scroll-mt-8 rounded-[2rem] border bg-gradient-to-br ${work.tone} p-6 shadow-[0_18px_46px_rgba(120,77,28,0.11)]`}
+            >
+              <div className="text-4xl">{work.emoji}</div>
+              <p className="mt-8 text-sm font-semibold tracking-[0.16em] text-stone-500">
+                {work.category}
+              </p>
+              <h2 className="mt-3 text-3xl font-black text-zinc-950">
+                {work.title}
+              </h2>
+              <p className="mt-4 min-h-24 text-base leading-8 text-stone-700">
+                {work.description}
+              </p>
+              <a
+                href={work.href}
+                target={work.href.startsWith("http") ? "_blank" : undefined}
+                rel={
+                  work.href.startsWith("http") ? "noopener noreferrer" : undefined
+                }
+                className="mt-7 inline-flex rounded-full bg-zinc-950 px-5 py-3 text-sm font-semibold text-white shadow-[0_12px_30px_rgba(39,27,15,0.18)] transition hover:-translate-y-0.5 hover:bg-black"
+              >
+                {work.action} →
+              </a>
+            </article>
+          ))}
+        </div>
       </section>
     </main>
   );

@@ -31,14 +31,20 @@ const growthCards = [
   {
     icon: "🟪",
     title: "時光郵局",
-    href: "/growth",
+    href: "/growth#time-post",
     tone: "from-purple-50 to-violet-100 ring-violet-200",
   },
   {
     icon: "🟥",
-    title: "AI 運送車",
-    href: "/growth",
+    title: "華爾街17",
+    href: "/growth#wall-street-17",
     tone: "from-rose-50 to-red-100 ring-rose-200",
+  },
+  {
+    icon: "⬛",
+    title: "AI 運送車",
+    href: "/growth#ai-truck",
+    tone: "from-stone-50 to-zinc-200 ring-zinc-200",
   },
 ];
 
@@ -119,7 +125,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {growthCards.map((card) => (
               <a
                 key={card.title}
