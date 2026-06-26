@@ -3,7 +3,7 @@ import Image from "next/image";
 const floatingWorks = [
   { name: "百鬼地鼠祭", position: "left-2 top-[18%] rotate-[-8deg]" },
   { name: "時光郵局", position: "right-0 top-[16%] rotate-[7deg]" },
-  { name: "女人的一生", position: "right-6 top-[44%] rotate-[-5deg]" },
+  { name: "華爾街17號", position: "right-6 top-[44%] rotate-[-5deg]" },
   { name: "55 不晚", position: "left-0 top-[52%] rotate-[6deg]" },
   { name: "打卡系統", position: "left-10 bottom-[10%] rotate-[-4deg]" },
   { name: "楊家將物流", position: "right-3 bottom-[12%] rotate-[5deg]" },
@@ -30,7 +30,7 @@ const growthCards = [
   },
   {
     icon: "🟥",
-    title: "華爾街17",
+    title: "華爾街17號",
     href: "/growth#wall-street-17",
     tone: "from-rose-50 to-red-100 ring-rose-200",
   },

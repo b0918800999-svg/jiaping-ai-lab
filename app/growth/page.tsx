@@ -46,7 +46,7 @@ const works = [
   {
     id: "wall-street-17",
     emoji: "🟥",
-    title: "華爾街17",
+    title: "華爾街17號",
     category: "音樂專輯",
     description:
       "新的音樂故事作品，延伸佳萍的 AI 音樂宇宙，也讓作品牆更完整。",
