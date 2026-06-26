@@ -28,7 +28,7 @@ const growthCards = [
     label: "故事作品",
     title: "時光郵局",
     href: "https://time-post-office.vercel.app/",
-    image: "/jiaping-chibi.png",
+    image: "/time-post-office-cover.png",
     tone: "from-purple-50 to-violet-100 ring-violet-200",
   },
   {
@@ -42,7 +42,6 @@ const growthCards = [
     label: "整理中",
     title: "AI 運送車",
     href: "/ai-truck",
-    image: "/jiaping-chibi.png",
     tone: "from-stone-50 to-zinc-200 ring-zinc-200",
   },
 ];
@@ -135,15 +134,21 @@ export default function Home() {
                 }
                 className={`group grid min-h-36 grid-cols-[7rem_1fr] overflow-hidden rounded-[1.5rem] bg-gradient-to-br ${card.tone} p-3 shadow-[0_14px_34px_rgba(120,77,28,0.12)] ring-1 transition duration-300 hover:-translate-y-1.5 hover:shadow-[0_22px_52px_rgba(120,77,28,0.18)] sm:min-h-44 sm:grid-cols-1 sm:p-4`}
               >
-                <div className="relative min-h-full overflow-hidden rounded-[1.1rem] bg-white/55 shadow-sm sm:aspect-[4/3]">
-                  <Image
-                    src={card.image}
-                    alt={`${card.title} 作品封面`}
-                    width={720}
-                    height={540}
-                    className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
-                  />
-                </div>
+                {"image" in card && card.image ? (
+                  <div className="relative min-h-full overflow-hidden rounded-[1.1rem] bg-white/55 shadow-sm sm:aspect-[4/3]">
+                    <Image
+                      src={card.image}
+                      alt={`${card.title} 作品封面`}
+                      width={720}
+                      height={540}
+                      className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                    />
+                  </div>
+                ) : (
+                  <div className="flex min-h-full items-center justify-center rounded-[1.1rem] bg-white/55 text-4xl font-black text-stone-400 shadow-sm sm:aspect-[4/3]">
+                    整理中
+                  </div>
+                )}
                 <div className="flex min-w-0 flex-col justify-center px-4 py-3 sm:px-1 sm:pb-1 sm:pt-4">
                   <p className="text-xs font-bold tracking-[0.14em] text-stone-500">
                     {card.label}
