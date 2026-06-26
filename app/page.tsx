@@ -31,13 +31,13 @@ const growthCards = [
   {
     icon: "🟥",
     title: "華爾街17號",
-    href: "/wall-street-17",
+    href: "https://halflifeblues.vercel.app/",
     tone: "from-rose-50 to-red-100 ring-rose-200",
   },
   {
     icon: "⬛",
     title: "AI 運送車",
-    href: "/growth#ai-truck",
+    href: "/ai-truck",
     tone: "from-stone-50 to-zinc-200 ring-zinc-200",
   },
 ];

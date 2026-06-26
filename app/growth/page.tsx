@@ -53,7 +53,7 @@ const works = [
     description:
       "新的音樂故事作品，延伸佳萍的 AI 音樂宇宙，也讓作品牆更完整。",
     cover: "/wall-street-17.jpg",
-    href: "/wall-street-17",
+    href: "https://halflifeblues.vercel.app/",
     action: "查看專輯",
     tone: "from-rose-50 to-red-100 border-rose-200",
   },
@@ -64,7 +64,7 @@ const works = [
     category: "系統作品",
     description:
       "把物流、打卡、管理與 AI 想像整理成可以繼續擴充的作品方向。",
-    href: "#ai-truck",
+    href: "/ai-truck",
     action: "整理中",
     tone: "from-stone-50 to-zinc-200 border-zinc-200",
   },
