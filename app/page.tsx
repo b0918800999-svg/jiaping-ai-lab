@@ -11,12 +11,6 @@ const floatingWorks = [
 
 const growthCards = [
   {
-    icon: "🟨",
-    title: "第一個網站",
-    href: "/growth",
-    tone: "from-amber-50 to-yellow-100 ring-amber-200",
-  },
-  {
     icon: "🟦",
     title: "百鬼地鼠祭",
     href: "https://hyakki-survival-game.vercel.app",
@@ -66,7 +60,7 @@ export default function Home() {
 
         <section className="grid min-h-[calc(100vh-76px)] items-center gap-10 py-12 lg:grid-cols-[0.86fr_1.14fr] lg:gap-10 lg:py-10">
           <div className="relative z-10 max-w-2xl">
-            <p className="mb-6 w-fit rounded-full bg-white/70 px-4 py-2 text-sm font-medium text-amber-800 shadow-sm ring-1 ring-amber-100">
+            <p className="mb-6 w-fit rounded-full bg-white/75 px-5 py-3 text-base font-semibold text-amber-900 shadow-sm ring-1 ring-amber-200 sm:text-lg">
               55 歲開始，把人生做成一件一件作品
             </p>
 
@@ -114,14 +108,14 @@ export default function Home() {
           <div className="mb-8 flex flex-col gap-4 sm:mb-10 sm:flex-row sm:items-end sm:justify-between">
             <div>
               <p className="text-sm font-semibold tracking-[0.24em] text-amber-700">
-                AI GROWTH MAP
+                WORK ENTRANCE
               </p>
               <h2 className="mt-3 text-4xl font-black tracking-tight text-zinc-950 sm:text-5xl">
-                我的 AI 成長地圖
+                主要作品入口
               </h2>
             </div>
             <p className="max-w-xl text-lg leading-8 text-stone-600">
-              像一面作品展示牆，收藏佳萍從零開始做出來的每一個小宇宙。
+              首頁先放最重要的作品入口；完整整理和正在補上的作品，放在作品展示牆裡。
             </p>
           </div>
 
