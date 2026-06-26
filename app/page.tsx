@@ -11,33 +11,38 @@ const floatingWorks = [
 
 const growthCards = [
   {
-    icon: "🟦",
+    label: "遊戲作品",
     title: "百鬼地鼠祭",
     href: "https://hyakki-survival-game.vercel.app",
+    image: "/hyakki_festival.png",
     tone: "from-sky-50 to-blue-100 ring-sky-200",
   },
   {
-    icon: "🟩",
+    label: "黑膠專輯",
     title: "55 不晚",
     href: "https://55-not-late.vercel.app",
+    image: "/not-late-cover.jpg",
     tone: "from-emerald-50 to-green-100 ring-emerald-200",
   },
   {
-    icon: "🟪",
+    label: "故事作品",
     title: "時光郵局",
     href: "https://time-post-office.vercel.app/",
+    image: "/jiaping-chibi.png",
     tone: "from-purple-50 to-violet-100 ring-violet-200",
   },
   {
-    icon: "🟥",
+    label: "音樂專輯",
     title: "華爾街17號",
     href: "https://halflifeblues.vercel.app/",
+    image: "/wall-street-17.jpg",
     tone: "from-rose-50 to-red-100 ring-rose-200",
   },
   {
-    icon: "⬛",
+    label: "整理中",
     title: "AI 運送車",
     href: "/ai-truck",
+    image: "/jiaping-chibi.png",
     tone: "from-stone-50 to-zinc-200 ring-zinc-200",
   },
 ];
@@ -114,8 +119,8 @@ export default function Home() {
                 主要作品入口
               </h2>
             </div>
-            <p className="max-w-xl text-lg leading-8 text-stone-600">
-              首頁先放最重要的作品入口；完整整理和正在補上的作品，放在作品展示牆裡。
+            <p className="max-w-xl text-base leading-8 text-stone-600 sm:text-lg">
+              點開就是作品本身，像翻開一張張佳萍的創作小卡。
             </p>
           </div>
 
@@ -128,15 +133,28 @@ export default function Home() {
                 rel={
                   card.href.startsWith("http") ? "noopener noreferrer" : undefined
                 }
-                className={`group min-h-48 rounded-[1.75rem] bg-gradient-to-br ${card.tone} p-5 shadow-[0_18px_46px_rgba(120,77,28,0.11)] ring-1 transition duration-300 hover:-translate-y-2 hover:shadow-[0_26px_60px_rgba(120,77,28,0.18)]`}
+                className={`group grid min-h-36 grid-cols-[7rem_1fr] overflow-hidden rounded-[1.5rem] bg-gradient-to-br ${card.tone} p-3 shadow-[0_14px_34px_rgba(120,77,28,0.12)] ring-1 transition duration-300 hover:-translate-y-1.5 hover:shadow-[0_22px_52px_rgba(120,77,28,0.18)] sm:min-h-44 sm:grid-cols-1 sm:p-4`}
               >
-                <div className="text-3xl">{card.icon}</div>
-                <h3 className="mt-8 text-2xl font-black text-zinc-950">
-                  {card.title}
-                </h3>
-                <p className="mt-5 text-sm font-semibold text-stone-600 transition group-hover:translate-x-1">
-                  點進去看看 →
-                </p>
+                <div className="relative min-h-full overflow-hidden rounded-[1.1rem] bg-white/55 shadow-sm sm:aspect-[4/3]">
+                  <Image
+                    src={card.image}
+                    alt={`${card.title} 作品封面`}
+                    width={720}
+                    height={540}
+                    className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                  />
+                </div>
+                <div className="flex min-w-0 flex-col justify-center px-4 py-3 sm:px-1 sm:pb-1 sm:pt-4">
+                  <p className="text-xs font-bold tracking-[0.14em] text-stone-500">
+                    {card.label}
+                  </p>
+                  <h3 className="mt-2 text-2xl font-black leading-tight text-zinc-950 sm:text-[1.7rem]">
+                    {card.title}
+                  </h3>
+                  <p className="mt-4 text-sm font-semibold text-stone-600 transition group-hover:translate-x-1">
+                    點進去看看 →
+                  </p>
+                </div>
               </a>
             ))}
           </div>
