@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const works = [
   {
     id: "first-site",
@@ -39,8 +41,8 @@ const works = [
     category: "故事作品",
     description:
       "把回憶、祝福和想說的話寄給未來，像一間收藏人生片段的郵局。",
-    href: "#time-post",
-    action: "網址待補",
+    href: "https://time-post-office.vercel.app/",
+    action: "查看作品",
     tone: "from-purple-50 to-violet-100 border-violet-200",
   },
   {
@@ -50,8 +52,9 @@ const works = [
     category: "音樂專輯",
     description:
       "新的音樂故事作品，延伸佳萍的 AI 音樂宇宙，也讓作品牆更完整。",
+    cover: "/wall-street-17.jpg",
     href: "#wall-street-17",
-    action: "網址待補",
+    action: "專輯整理中",
     tone: "from-rose-50 to-red-100 border-rose-200",
   },
   {
@@ -103,6 +106,17 @@ export default function GrowthPage() {
               key={work.id}
               className={`scroll-mt-8 rounded-[2rem] border bg-gradient-to-br ${work.tone} p-6 shadow-[0_18px_46px_rgba(120,77,28,0.11)]`}
             >
+              {"cover" in work && work.cover ? (
+                <div className="mb-6 overflow-hidden rounded-[1.5rem] bg-black/5 shadow-sm">
+                  <Image
+                    src={work.cover}
+                    alt={`${work.title} 專輯封面`}
+                    width={1600}
+                    height={900}
+                    className="aspect-[16/9] w-full object-cover"
+                  />
+                </div>
+              ) : null}
               <div className="text-4xl">{work.emoji}</div>
               <p className="mt-8 text-sm font-semibold tracking-[0.16em] text-stone-500">
                 {work.category}

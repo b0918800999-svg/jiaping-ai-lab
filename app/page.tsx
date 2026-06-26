@@ -25,7 +25,7 @@ const growthCards = [
   {
     icon: "🟪",
     title: "時光郵局",
-    href: "/growth#time-post",
+    href: "https://time-post-office.vercel.app/",
     tone: "from-purple-50 to-violet-100 ring-violet-200",
   },
   {
